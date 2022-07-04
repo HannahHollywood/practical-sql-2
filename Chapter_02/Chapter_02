@@ -1,4 +1,30 @@
 ---------------------------------------------------------------------------
+-- Practice Questions (End of Chapter 2)
+
+-- Created 2 New Tables
+-- Entered Data into 'animal_descriptors' Table
+---------------------------------------------------------------------------
+
+CREATE TABLE animal_type (
+id bigserial,
+animal_type varchar(25)
+);
+
+CREATE TABLE animal_descriptors (
+id bigserial,
+colour varchar(25),
+size varchar(25),
+location varchar(25),
+animal_type varchar(30),
+preferred_foods varchar(35)
+);
+
+INSERT INTO animal_descriptors (id, colour, size, location, animal_type, preferred_foods)
+VALUES ('1', 'Yellow', 'Large', 'Africa', 'Lion', 'Meat'),
+       ('2', 'Blue', 'Massive', 'Ocean', 'Blue Whale', 'Kelp, Small Fish'),
+       ('3', 'Grey', 'Huge', 'Africa', 'Elephant', 'Grass, Veggies');
+
+---------------------------------------------------------------------------
 -- Practical SQL: A Beginner's Guide to Storytelling with Data, 2nd Edition
 -- by Anthony DeBarros
 
